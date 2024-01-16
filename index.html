@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- style page -->
+        <link rel="stylesheet" href="./css/normalize.css">
+        <!-- Normalize styling -->
+        <link rel="stylesheet" href="./css/all.min.css">
+        <!-- Font-Awesome styling -->
+        <link rel="stylesheet" href="./css/frameWork.css">
+        <!-- Frame work styling -->
+        <link rel="stylesheet" href="./css/style.css"> <!-- Main styling -->
+
+        <!-- Google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&display=swap"
+            rel="stylesheet">
+
+        <title>Dashboard</title>
+    </head>
+    <body>
+
+        <div class="page d-flex">
+            <!--! Start Sidebar -->
+            <nav>
+                <div class="sidebar bg-white p-20 pos-relative ">
+                    <h3 class="pos-relative txt-center mt-0 ">Aliwey</h3>
+                    <ul>
+                        <li>
+                            <a
+                                class="active d-flex align-center fs-14 c-black rad-6 p-10"
+                                href="index.html">
+                                <i class="fa-regular fa-chart-bar fa-fw"></i>
+                                <span class="hide-mobile">Dashboard</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                class="d-flex align-center fs-14 c-black rad-6 p-10"
+                                href="settings.html">
+                                <i class="fa-solid fa-gear fa-fw"></i>
+                                <span class="hide-mobile">Settings</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                class="d-flex align-center fs-14 c-black rad-6 p-10"
+                                href="porfile.html">
+                                <i class="fa-regular fa-user fa-fw"></i>
+                                <span class="hide-mobile">Profile</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                class="d-flex align-center fs-14 c-black rad-6 p-10"
+                                href="projects.html">
+                                <i
+                                    class="fa-solid fa-diagram-project fa-fw"></i>
+                                <span class="hide-mobile">Projects</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                class="d-flex align-center fs-14 c-black rad-6 p-10"
+                                href="courses.html">
+                                <i class="fa-solid fa-graduation-cap fa-fw"></i>
+                                <span class="hide-mobile">Courses</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                class="d-flex align-center fs-14 c-black rad-6 p-10"
+                                href="friends.html">
+                                <i class="fa-regular fa-circle-user fa-fw"></i>
+                                <span class="hide-mobile">Friends</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                class="d-flex align-center fs-14 c-black rad-6 p-10"
+                                href="files.html">
+                                <i class="fa-regular fa-file fa-fw"></i>
+                                <span class="hide-mobile">Files</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                class="d-flex align-center fs-14 c-black rad-6 p-10"
+                                href="plans.html">
+                                <i class="fa-regular fa-credit-card fa-fw"></i>
+                                <span class="hide-mobile">Plans</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!--! End Sidebar -->
+            <div class="content w-full">
+                <!-- Start the Header part -->
+                <header class="bg-white p-15 between-flex">
+                    <div class="search pos-relative">
+                        <label for="searching">
+                            <input class="p-10"
+                                type="search"
+                                id="searching"
+                                placeholder="Type A Keyword">
+                        </label>
+                    </div>
+                    <div class="icons d-flex align-center">
+                        <span class="notification pos-relative">
+                            <i class="fa-regular fa-bell fa-lg"></i>
+                        </span>
+                        <img src="./images/for-header.jpg" alt="for header">
+                    </div>
+                </header>
+                <!-- End the Header part -->
+
+                <main></main>
+                <h1 class="pos-relative">Dashboard</h1>
+                <div class="wrapper d-grid gap-20">
+                    <!-- Start Welcome Widget -->
+                    <div class="welcome bg-white rad-10 txt-center-mobile block-mobile ">
+                        <div class="intro p-20 d-flex space-between  bg-eee ">
+                            <div>
+                                <h2 class="m-0">Welcome</h2>
+                                <p class="c-grey mt-5 ">Aliwey</p>
+                            </div>
+                            <img class="hide-" src="./images/for-welcome.png"
+                                alt="for welcome">
+                        </div>
+                        <img src="./images/for-header.jpg"
+                            alt="for welcome /body" class="avatar">
+                        <div
+                            class="body txt-center d-flex p-20 mb-20 block-mobile">
+                            <div>Aliwey Abood <span
+                                    class="d-block c-gray fs-14 mt-10">Developer</span></div>
+                            <div>80 <span
+                                    class="d-block c-gray fs-14 mt-10">Projects</span></div>
+                            <div>$10000 <span
+                                    class="d-block c-gray fs-14 mt-10">Earned</span></div>
+                        </div>
+                        <a href="profile.html"
+                            class="visit d-block fs-14 bg-blue c-white w-fit btn-shape">Profile
+                        </a>
+                    </div>
+                    <!-- End Welcome widget -->
+
+                    <!-- Start Quick Draft Widget -->
+                    <div class="quick-draft p-20 bg-white rad-10">
+                        <h2 class="mt-0 mb-10">Quick Draft</h2>
+                        <p class="mt-0 mb-20 c-gray fs-14">Write A Draft For Your Ideas</p>
+                        <form action>
+                            <label for="title">
+                                <input type="text"
+                                    class="d-block mb-20 w-full p-10 b-none bg-eee btn"
+                                    name="title"
+                                    id="title"
+                                    placeholder="Title">
+                            </label>
+                            <textarea class="d-block mb-20 w-full p-10 b-none bg-eee rad-6" name="Thought"
+                                placeholder="Your Thought"></textarea>
+                            <label for="check">
+                                <input type="submit"
+                                
+                                    name="submit"
+                                    class="save d-block fs-14 bg-blue c-white b-none w-fit btn-shape"
+                                    id="check"
+                                    value="save">
+                            </label>
+                        </form>
+                    </div>
+                    <!-- End Quick Draft Widget -->
+                </div>
+            </div>
+
+        </div>
+
+    </body>
+</html>
