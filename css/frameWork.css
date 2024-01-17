@@ -18,13 +18,12 @@
 .space-between {
     justify-content: space-between;
 }
+.f-wrap {
+    flex-wrap: wrap;
+}
 @media (max-width: 767px) {
     .mobile-flex-col {
         flex-direction: column;
-    }
-    .mobile-flex-center {
-        align-items: center;
-        justify-content: center;
     }
 }
 .d-grid {
@@ -63,7 +62,12 @@
 .p-20 {
     padding: 20px;
 }
-
+.pb-10 {
+    padding-bottom: 10px;
+}
+.pb-15 {
+    padding-bottom: 15px;
+}
 .m-0 {
     margin: 0;
 }
@@ -81,6 +85,15 @@
 }
 .mt-20 {
     margin-top: 20px;
+}
+.mt-25 {
+    margin-top: 25px;
+}
+.mr-10 {
+    margin-right: 10px;
+}
+.mb-5 {
+    margin-bottom: 5px;
 }
 .mb-10 {
     margin-bottom: 10px;
@@ -100,6 +113,12 @@
 }
 .bg-blue {
     background-color: var(--blue-color);
+}
+.bg-orange {
+    background-color: var(--orange-color);
+}
+.bg-green {
+    background-color: var(--green-color);
 }
 .c-black {
     color: black;
@@ -137,8 +156,20 @@
 .txt-center {
     text-align: center;
 }
+.fs-13 {
+    font-size: 13px;
+}
 .fs-14 {
     font-size: 14px;
+}
+.fs-15 {
+    font-size: 15px;
+}
+.fs-25 {
+    font-size: 25px;
+}
+.fw-bold {
+    font-weight: bold;
 }
 @media (max-width: 767px) {
     .txt-center-mobile {
@@ -169,13 +200,27 @@
 
 /*! Start Components */
 /*^ first one */
+.center-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width: 767px) {
+    .mobile-center-flex {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }    
+}
+
+/*? Second one */
 .between-flex {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-/** Second one  */
+/** Third one  */
 .btn-shape {
     padding: 4px 10px;
     border-radius: 6px;
