@@ -580,9 +580,6 @@ header .icons .notification::before {
 
 /* Start Settings Page */
 
-
-/* End Settings Page */
-
 .settings-page {
     grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
 }
@@ -599,6 +596,41 @@ header .icons .notification::before {
     resize: none;
     min-height: 150px;
 }
+
+.settings-page .email {
+    display: inline-flex;
+    width: calc(100% - 80px);
+}
+.settings-page .sec-box {
+    padding-bottom: 15px;
+}
+.settings-page .sec-box:not(:last-of-type) {
+    border-bottom: var(--main-border);
+}
+/* Start Setting Social-Media-Box */
+.settings-page .social-boxes i {
+    width: 40px;
+    height: 40px;
+    background-color: #f6f6f6;
+    border: 1px solid #ddd;
+    border-right: none;
+    border-radius: 6px 0 0 6px;
+    transition: var(--main-transition);
+}
+.settings-page .social-boxes input {
+    height: 40px;
+    background-color: #f6f6f6;
+    border: 1px solid #ddd;
+    padding-left: 15px;
+    border-radius: 0 6px 6px 0;
+}
+.settings-page .social-boxes > div:focus-within i {
+    color: black;
+}
+/* End Setting Social-Media-Box */
+
+/* End Settings Page */
+
 /* Start Animation */
 @keyframes change-color {
     from {

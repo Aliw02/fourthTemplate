@@ -5,6 +5,8 @@
     --green-color: #22c55e;
     --red-color: #f44336;
     --gray-color: #888;
+    --main-border: 1px solid #ccc;
+    --main-transition: 0.3s;
 }
 
 /** Start Box */
@@ -224,6 +226,9 @@
 .b-none {
     border: none;
 }
+.border-ccc {
+    border: var(--main-border);
+}
 .rad-6 {
     border-radius: 6px;
 }
@@ -289,6 +294,7 @@ The Code for Toggle Checkbox
 .toggle-checkbox {
     -webkit-appearance: none;
     appearance: none;
+    display: none;
 }
 .toggle-switch {
     background-color: #ccc;
