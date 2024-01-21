@@ -91,6 +91,9 @@
 .m-0 {
     margin: 0;
 }
+.m-15 {
+    margin: 15px;
+}
 .m-20 {
     margin: 20px;
 }
@@ -184,14 +187,17 @@
 }
 /*! End color */
 
-/* ---------------- */
-/* ---------------- */
+/*^ ---------------- */
+/*^ ---------------- */
 
 /* Start position */
 .pos-relative {
     position: relative;
 }
 /* End position */
+
+/*? ---------------- */
+/*? ---------------- */
 
 /* Start fonts */
 .txt-center {
@@ -329,6 +335,5 @@ The Code for Toggle Checkbox
     content: "\f00c";
     left: 50px;
     color: var(--blue-color);
-    
 }
 /*! End Components */
