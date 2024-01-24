@@ -811,20 +811,20 @@ header .icons .notification::before {
 .profile-page .info-box h4 {
     font-weight: normal;
 }
-.info-box .toggle-switch {
+.profile-page .info-box .toggle-switch {
     width: 60px;
     height: 24px;
 }
 @media (max-width: 767px) {
-    .info-box .toggle-switch {
+    .profile-page .info-box .toggle-switch {
         margin: auto;
     }
 }
-.info-box .toggle-switch::before {
+.profile-page .toggle-switch::before {
     width: 16px;
     height: 16px;
 }
-.toggle-checkbox:checked + .toggle-switch::before {
+.profile-page .toggle-checkbox:checked + .toggle-switch::before {
     left: 40px;
 
 }
@@ -892,6 +892,234 @@ header .icons .notification::before {
 /* End Activities Widget */
 /* End Profile Page */
 
+/* Start Projects Page */
+.projects-page {
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+@media (max-width: 767px) {
+    .projects-page {
+        grid-template-columns: minmax(200px, 1fr);
+        margin-left: 10px;
+        margin-right: 10px;
+        gap: 10px;
+    }
+}
+.projects-page .project .date {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.projects-page .project h4 {
+    font-weight: normal;
+}
+.projects-page .project .team {
+    position: relative;
+    min-height: 80px;
+}
+.projects-page .project .team a {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.projects-page .project .team a:nth-child(2) {
+    left: 25px;
+}
+.projects-page .project .team a:nth-child(3) {
+    left: 50px;
+}
+.projects-page .project .team a:nth-child(4) {
+    left: 75px;
+}
+.projects-page .project .team a:hover {
+    z-index: 1000;
+}
+.projects-page .project .team img {
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+.projects-page .project .techs {
+    justify-content: flex-end;
+    border-top: var(--main-border);
+    padding-top: 15px;
+    margin-top: 15px;
+}
+@media (max-width: 767px) {
+    .projects-page .project .techs {
+        flex-direction: column;
+    }
+}
+.projects-page .project .techs span {
+    padding: 3px 8px;
+    margin-left: 5px;
+    width: fit-content;
+}
+@media (max-width: 767px) {
+    .projects-page .project .techs span:not(:last-child) {
+        margin-bottom: 15px;
+    }
+}
+.projects-page .project .info {
+    border-top: var(--main-border);
+    padding-top: 15px;
+    margin-top: 15px;
+}
+@media (max-width: 767px) {
+    .projects-page .project .info {
+        flex-direction: column;
+    }
+}
+.projects-page .project .prog {
+    height: 8px;
+    width: 260px;
+    position: relative;
+    border-radius: 6px;
+}
+@media (max-width: 767px) {
+    .projects-page .project .prog {
+        margin-bottom: 15px;
+    }
+}
+.projects-page .project .prog span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    border-radius: 6px;
+}
+/* End Projects Page */
+
+/* Start Courses Page */
+.courses-page {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+@media (max-width: 767px) {
+    .courses-page {
+        grid-template-columns: minmax(200px, 1fr);
+        margin-left: 10px;
+        margin-right: 10px;
+        gap: 10px;
+    }
+}
+.courses-page .course {
+    overflow: hidden;
+}
+.courses-page .course .cover {
+    max-width: 100%;
+    height: 270px;
+}
+.courses-page .course .instructor {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    top: 20px;
+    left: 20px;
+    border: 2px solid white;
+}
+.courses-page .course .description {
+    line-height: 1.8;
+}
+.courses-page .course .info {
+    border-top: var(--main-border);
+    font-size: 13px;
+}
+.courses-page .course .info .title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 13px;
+    top: -13px;
+    height: 27px;
+}
+/* End Courses Page */
+
+/* Start Friends Page */
+.friends-page {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+@media (max-width: 767px) {
+    .friends-page {
+        grid-template-columns: minmax(200px, 1fr);
+        margin-left: 10px;
+        margin-right: 10px;
+        gap: 10px;
+    }
+}
+.friends-page .friend .contact {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+.friends-page .friend .contact i {
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 50%;
+    color: #666;
+    font-size: 13px;
+    cursor: pointer;
+    transition: var(--main-transition);
+}
+.friends-page .friend .contact i:hover {
+    background-color: var(--blue-color);
+    color: white;
+}
+.friends-page .friend .icons {
+    border-top: var(--main-border);
+    border-bottom: var(--main-border);
+    margin: 10px 0 15px;
+    padding: 15px 0;
+}
+.friends-page .friend .icons i {
+    margin-right: 10px;
+}
+.friends-page .friend .icons .vip {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 40px;
+    opacity: 0.2;
+}
+/* End Friends Page */
+
+/* Start Files Page */
+.files-page .file-stats {
+    min-width: 260px;
+}
+.files-page .file-stats .icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+.files-page .file-stats .size {
+    margin-left: auto;
+}
+.files-page .file-stats .blue {
+    background-color: rgb(0 117 255 / 20%);
+}
+.files-page .file-stats .green {
+    background-color: rgb(34 197 94 / 20%);
+}
+.files-page .file-stats .red {
+    background-color: rgb(244 67 54 / 20%);
+}
+.files-page .file-stats .orange {
+    background-color: rgb(245 158 11 / 20%);
+}
+.files-page .file-stats .upload {
+    margin: 15px auto 0;
+    padding: 10px 15px;
+    transition: var(--main-transition);
+}
+.files-page .file-stats .upload:hover {
+    background-color: var(--blue-alt-color);
+}
+.files-page .file-stats .upload:hover i {
+    animation: go-up 0.8s infinite;
+}
+/* End Files Page */
+
 /* Start Animation */
 @keyframes change-color {
     from {
@@ -899,6 +1127,17 @@ header .icons .notification::before {
     }
     to {
         background-color: white;
+    }
+}
+@keyframes go-up {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-5px);
+    }
+    100%{
+        transform: translateY(0);
     }
 }
 /* End Animation */

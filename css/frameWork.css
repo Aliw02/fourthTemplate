@@ -46,6 +46,9 @@
 /** End Box */
 
 /*^ Start width + height */
+.w-100 {
+    width: 100px;
+}
 .w-full {
     width: 100%;
 }
@@ -53,7 +56,9 @@
     width: fit-content;
 }
 
-
+.h-100 {
+    height: 100px;
+}
 .h-full {
     height: 100%;
 }
@@ -234,6 +239,9 @@
 }
 .border-ccc {
     border: var(--main-border);
+}
+.border-eee {
+    border: 1px solid #eee;
 }
 .rad-6 {
     border-radius: 6px;
