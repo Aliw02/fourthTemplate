@@ -74,6 +74,9 @@
 .p-20 {
     padding: 20px;
 }
+.pt-10 {
+    padding-top: 10px;
+}
 .pt-20 {
     padding-top: 20px;
 }
@@ -198,6 +201,9 @@
 /* Start position */
 .pos-relative {
     position: relative;
+}
+.pos-absolute {
+    position: absolute;
 }
 /* End position */
 

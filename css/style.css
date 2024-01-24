@@ -6,7 +6,7 @@
     --green-color: #22c55e;
     --red-color: #f44336;
     --grey-color: #888;
-    --main-border: 1px solid #ccc;
+    --main-border: 1px solid #eee;
     --main-transition: 0.3s;
 }
 
@@ -1084,6 +1084,12 @@ header .icons .notification::before {
 /* End Friends Page */
 
 /* Start Files Page */
+
+/* Start File-Stats */
+.files-page {
+    flex-direction: row-reverse;
+    align-items: flex-start;
+}
 .files-page .file-stats {
     min-width: 260px;
 }
@@ -1118,6 +1124,31 @@ header .icons .notification::before {
 .files-page .file-stats .upload:hover i {
     animation: go-up 0.8s infinite;
 }
+/* End File-Stats */
+
+/* Start Files-Content */
+.files-page .files-content {
+    flex: 1;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+@media (max-width: 767px) {
+    .files-page .files-content {
+        grid-template-columns: minmax(200px, 1fr);
+    }
+}
+.files-page .files-content img {
+    width: 64px;
+    height: 64px;
+    transition: var(--main-transition);
+}
+.files-page .files-content .file:hover img{
+    transform: rotate(5deg)
+}
+.files-page .files-content .info {
+    border-top: var(--main-border);
+}
+/* End Files-Content */
+
 /* End Files Page */
 
 /* Start Animation */
